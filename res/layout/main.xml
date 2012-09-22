@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe7e7e7"
+    android:gravity="center"
+    >
+	<FrameLayout
+		android:layout_width="250dip"
+		android:layout_height="57dip"
+		>
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:gravity="center"
+			android:text="滑动按钮"
+			android:background="@drawable/btn_back" />
+		<!-- 此处，滑动按钮的父亲组件不能为FrameLayout -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<com.anzh.mybutton.SlidingButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/mainview_button"
+				android:background="@drawable/scroll"
+				android:gravity="center" />
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>
