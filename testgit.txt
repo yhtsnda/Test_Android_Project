@@ -1,3 +1,0 @@
-master mytest
-
-master mytest2
